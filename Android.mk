@@ -24,6 +24,7 @@ LOCAL_MODULE_TAGS := optional
 # This name is dictated by the fact that the SQLite code calls loadLibrary("sqlite_jni").
 LOCAL_MODULE := libsqlite_jni
 LOCAL_PRELINK_MODULE := false
+# LOCAL_ARM_MODE := arm
 include $(BUILD_SHARED_LIBRARY)
 
 ifeq ($(WITH_HOST_DALVIK),true)
